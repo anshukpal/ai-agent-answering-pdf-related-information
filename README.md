@@ -2,21 +2,21 @@
 The code will create an AI agent that leverages the capabilities of a large language model. This agent should be able to extract answers based on the content of a large PDF document and post the results on Slack using OpenAI LLMs
 
 
-# Tech stack
+## Tech stack
 Python Argparse for CLI
 ChromaDB as vector database
 OpenAI gpt-3.5-turbo-0125
 
-# Project Environment
+## Project Environment
 The project file structure is simple, we will have four Python files 
-    - client.py: for defining the CLI 
-    - application.py: for processing, storing, and querying data. 
-    - messaging.py: for messaging utility
-    - requirements.txt: for all necessary dependant packages
+- client.py: for defining the CLI 
+- application.py: for processing, storing, and querying data. 
+- messaging.py: for messaging utility
+- requirements.txt: for all necessary dependant packages
 Load the OpenAI API key and Slack App Auth Token (Zania APP, which was created to send message to a specific channel)
 
 
-# Code Workflow 
+## Code Workflow 
 - User inputs the path of the pdf and a list of queries (extra parameters added to clear vector store collection if required, value for no. words in a single chunk,Number of results to be fetched from collection)
 - To store text embeddings and their metadata, we will create a collection with ChromaDB.
 - As an embedding model, we are using MiniLM-L6-V2 with ONNX runtime. It is small yet capable and on top of that open-sourced.
@@ -30,9 +30,9 @@ Load the OpenAI API key and Slack App Auth Token (Zania APP, which was created t
 - Then the utility function combines obtained text chunks with the user queries, feeds it into the get_response() function, and returns the resulting answer strings. The json created is  list of dictionaries. 
 - Finally, the response is sent a slack message via an slack app created in a defined workspace and channel.
 
-# Possible Enhancments
+## Possible Enhancments
 
 - Usage of streamlit UI to enhance CLI
 - Multiple pdfs as provision for better retreival stratgey
 - Usage of context (RAG?) in the prompt for better answers
-- 
+- Better Vector DB like Open Search?
