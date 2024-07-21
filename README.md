@@ -3,9 +3,9 @@ The code will create an AI agent that leverages the capabilities of a large lang
 
 
 ## Tech stack
-Python Argparse for CLI
-ChromaDB as vector database
-OpenAI gpt-3.5-turbo-0125
+- Python Argparse for CLI
+- ChromaDB as vector database
+- OpenAI gpt-3.5-turbo-0125
 
 ## Project Environment
 The project file structure is simple, we will have four Python files 
