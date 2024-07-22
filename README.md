@@ -33,6 +33,6 @@ Load the OpenAI API key and Slack App Auth Token (Zania APP, which was created t
 ## Possible Enhancments
 
 - Usage of streamlit UI to enhance CLI
-- Multiple pdfs as provision for better retreival stratgey
+- Multiple pdfs as provision for better retrieval strategy
 - Usage of context (RAG?) in the prompt for better answers
 - Better Vector DB like Open Search?
