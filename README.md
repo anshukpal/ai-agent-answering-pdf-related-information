@@ -1,4 +1,4 @@
-# zania-ai-coding-challenge
+# ai-agent-answering-pdf-related-information
 The code will create an AI agent that leverages the capabilities of a large language model. This agent should be able to extract answers based on the content of a large PDF document and post the results on Slack using OpenAI LLMs
 
 
@@ -13,7 +13,7 @@ The project file structure is simple, we will have four Python files
 - application.py: for processing, storing, and querying data. 
 - messaging.py: for messaging utility
 - requirements.txt: for all necessary dependant packages
-Load the OpenAI API key and Slack App Auth Token (Zania APP, which was created to send message to a specific channel)
+Load the OpenAI API key and Slack App Auth Token (The APP, which was created to send message to a specific channel)
 
 
 ## Code Workflow 
